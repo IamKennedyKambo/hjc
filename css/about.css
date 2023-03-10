@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --dark-orange: rgb(255, 38, 0);
+  --light-orange: rgb(255, 20, 0);
+  --bluegray: rgb(3, 32, 24);
+}
+
+/* navigation bar */
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  padding: 1.5rem;
+  align-items: center;
+  color: white;
+  background-color: var(--bluegray);
+  border-bottom: 3px solid var(--dark-orange);
+}
+
+nav > h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+nav > h3 > span {
+  color: var(--dark-orange);
+}
+
+/* navigation links */
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+ul > li {
+  text-transform: uppercase;
+}
+
+ul > li > a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* Subscribe section */
+.subscribe {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  color: white;
+  background-color: var(--bluegray);
+}
+
+.email > input[type="email"] {
+  padding: 0.5rem;
+  width: 20vw;
+  outline: none;
+}
+
+.email > input[type="button"] {
+  padding: 0.62rem;
+  background-color: var(--light-orange);
+  color: white;
+  border: none;
+}
+
+/* About Us */
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-content {
+  grid-column: 1 / span 8;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-content > div {
+  padding: 1rem;
+}
+
+.uncolored1 > h3 {
+  padding-bottom: 1rem;
+}
+
+.colored {
+  background-color: var(--bluegray);
+  color: white;
+}
+
+.sidebar {
+  grid-column: 9 / span 2;
+  background-color: var(--bluegray);
+  padding: 1rem;
+  color: white;
+  margin: 1rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background-color: var(--light-orange);
+  text-align: center;
+  color: white;
+}
